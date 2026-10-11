@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+
+:root {
+  --text-color: #d6d6d6;
+  --text-color-hover: #EAB308;
+  --box-bg: #eab20853;
+  
+  --font-heading: "Poppins", sans-serif;
+  --font-mono: "Fira Code", monospace;
+  --bg-gradinet:linear-gradient(
+    to right,
+    #1d1d1d,
+    #2d2d2d,
+    #1d1d1d
+  );
+}
+
+body {
+  background: linear-gradient(     to right,     #1d1d1d,     #2d2d2d,     #1d1d1d   );
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+
+.site-shell {
+  position: relative;
+  isolation: isolate;
+  min-height: 100vh;
+}
+
+.site-shell::before {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  pointer-events: none;
+  content: "";
+  background: radial-gradient(
+    440px circle at var(--light-x, 50%) var(--light-y, 12%),
+    rgb(240 199 78 / 11%),
+    transparent 75%
+  );
+}
+
+@keyframes scrollBounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(8px);
+    }
+}
+
+.animate-scroll-bounce {
+    animation: scrollBounce 1.2s ease-in-out infinite;
+}
