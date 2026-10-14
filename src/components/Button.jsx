@@ -1,8 +1,8 @@
 import React from 'react'
 import SpecularButton from './SpecularButton';
-function Button({ title }) {
+function Button({ title,onClick }) {
     return (
-        <div>
+        <div onClick={onClick}>
 
 
             <SpecularButton
