@@ -4,6 +4,8 @@ import ieee from '../assets/ieeeWebite.png'
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import watchParty from "../assets/watchparty.png";
+import webAudit from "../assets/WebAuditProject.png"
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
@@ -21,22 +23,52 @@ const projects = [
       "Code analysis and pull request review",
     ],
     github: "https://github.com/Piyushmore27/DevNex-CodeEditor",
-    live: "#",
+    live: "https://dev-nex-code-editor.vercel.app/",
   },
   {
     title: "SUI-IEEE Student Branch Website",
-  category: "Official Organization Website",
-  description:
-    "A modern and responsive website for the SUI-IEEE Student Branch at Sage University Indore, showcasing technical events, workshops, hackathons, student activities, and IEEE initiatives.",
-  image: ieee,
-  tech: ["React", "Tailwind CSS", "JavaScript", "GSAP"],
-  highlights: [
-    "Showcase of IEEE events, workshops, and hackathons",
-    "Information about student branch chapters and initiatives",
-    "Responsive interface for students and visitors",
-  ],
-  github: "https://github.com/Piyushmore27/SUI-IEEE",
-  live: "https://suiieee.vercel.app/",
+    category: "Official Organization Website",
+    description:
+      "A modern and responsive website for the SUI-IEEE Student Branch at Sage University Indore, showcasing technical events, workshops, hackathons, student activities, and IEEE initiatives.",
+    image: ieee,
+    tech: ["React", "Tailwind CSS", "JavaScript", "GSAP"],
+    highlights: [
+      "Showcase of IEEE events, workshops, and hackathons",
+      "Information about student branch chapters and initiatives",
+      "Responsive interface for students and visitors",
+    ],
+    github: "https://github.com/Piyushmore27/SUI-IEEE",
+    live: "https://suiieee.vercel.app/",
+  },
+  {
+    title: "Watch Party",
+    category: "Full Stack Project",
+    description:
+      "A real-time YouTube Watch Party application that allows multiple users to watch YouTube videos together in synchronized rooms. Users can create rooms, invite others, communicate through real-time chat, and enjoy a collaborative viewing experience with role-based permissions.",
+    image: watchParty,
+    tech: ["React.js", "Node.js", "Express.js", "Socket.IO", "Mongo Atlas", "Tailwind css"],
+    highlights: [
+      "Real-Time Video Synchronization",
+      "Role-Based Room Management",
+      "Full-Stack Development & Deployment",
+    ],
+    github: "https://github.com/Piyushmore27/WatchParty",
+    live: "https://watch-party-wheat-tau.vercel.app/",
+  },
+  {
+    title: "WebAudit.",
+    category: "WebAudit -Automated Website",
+    description:
+      "Developed an Automated Website Audit Tool using the MERN stack that analyzes websites based on performance, SEO, security, and responsiveness. The system generates detailed reports with identified issues and improvement suggestions, helping developers enhance overall website quality efficiently.",
+    image: webAudit,
+    tech: ["React.js", "Node.js", "Express.js", "Socket.IO", "Mongo Atlas", "Tailwind css"],
+    highlights: [
+      "Website Audit",
+      "SEO Optimization",
+      "Bug Detection",
+    ],
+    github: "https://github.com/Piyushmore27/website-audit-tool",
+    live: "https://website-audit-tool-sable.vercel.app/",
   },
   {
     title: "Wanderlust",
@@ -100,11 +132,11 @@ function Projects() {
 
   return (
     <div className="w-full min-h-screen  px-6 py-16 text-[var(-text-color)] sm:px-10 lg:px-14">
-      
+
       <div className="mx-auto max-w-7xl">
         <div className="mb-2 flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
           <div className="max-w-3xl">
-            
+
 
             <h2 className="text-4xl font-black tracking-[-0.06em] text-white sm:text-6xl lg:text-[5rem]">
               Featured Projects
@@ -124,7 +156,7 @@ function Projects() {
           ref={containerRef}
           className="relative h-screen overflow-hidden text-white "
         >
-         
+
 
           {/* Horizontal track */}
           <div className="absolute inset-x-0 bottom-0 top-0 overflow-hidden">

@@ -46,7 +46,7 @@ function Home() {
                                 <a
                                     href="/Piyush_Resume.pdf"
                                     download="Piyush-More-Resume.pdf"
-                                    className="inline-flex min-h-11 items-center justify-center rounded-2xl border border-neutral-600 px-4 py-4 font-semibold text-neutral-600 transition-colors shadow-sm shadow-white hover:transition hover:translate-y-0.5 hover:shadow-none"
+                                    className="inline-flex min-h-11 items-center justify-center rounded-2xl border border-neutral-600 px-4 py-4 font-semibold text-neutral-300 transition-colors shadow-sm shadow-white hover:transition hover:translate-y-0.5 hover:shadow-none"
                                 >
                                     Download Resume
                                 </a>
